@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    <link rel="stylesheet" href="estilo.css">
+
+
+</style>
+</head>
+<body>
+    <header>
+       <h1>Amazon</h1>
+    </header>
+    <main>
+         <div id="mini">
+               <img onmouseover="ampliar('img/1.jpg')"src="img/1.jpg" alt="Computador">
+               <img onmouseover="ampliar('img/2.jpg')" src="img/2.jpg" alt="Computador gamer, com teclado led e phone">
+               <img onmouseover="ampliar('img/3.jpg')"src="img/3.jpg" alt="Computador">
+               <img onclick="ampliar('img/4.jpg')"src="img/4.jpg" alt="Computador">
+                                                                                        
+         </div>
+         <div id="max">
+            <img src="img/1.jpg" alt="Computador" id="grandona">
+            <!--<img src="img/1.jpg" alt="Computador" class="grandona"> posso também usar esta classe class/-->
+
+         </div>
+    </main>
+    <script>
+        function ampliar(imagem){
+            document.getElementById("grandona").src = imagem;
+            /*document.getElementsByClassName("grandona") [0].src = imagem;*/ /*poso também utilizar esta maneira*/
+            /*document.getElementById("grandona").style.border= "solid red 10px"; colocar uma borda na imagem*/
+            /*document.getElementById("grandona").style.boxShadow= "5px 10px 15px 0px rgba(0,0,0,0.5)"; colocando sombra na imagem*/
+        }
+    </script>
+</body>
+</html>

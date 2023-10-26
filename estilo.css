@@ -1,0 +1,52 @@
+header{
+    width: 90%;
+    border:solid #c0c0c0 1px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: #edf5f7;
+   }
+
+
+   div#mini img{
+      width: 120px;
+      height: 100px;
+      margin:2px 0px; /* Margem de 5px acima/abaixo, 0px esquerda/direita */
+      border-radius: 30px;
+      border: solid black 1px;
+    }
+
+
+   div#max img{
+     width: 50%;
+   }
+
+
+  main{
+   border:solid #c0c0c0 1px;
+   width: 90%;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+    /* Coloca o div#mini e o div#max um à direita do outro */
+  }
+
+
+ div#mini{
+    flex:10%; /* Vai usar 30% da largura do main */
+    display: flex; /* Ativa as propriedades flex-box */
+    flex-direction: column;
+    /* Coloca as imagens que estão no div#mini uma abaixo da outra */
+    align-items: center; /*centraliza as imagens horizontalmente */
+}
+
+div#max {
+    flex:90%; /* Vai usar 70% da largura do main */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ * {
+    margin:0 auto
+ }
